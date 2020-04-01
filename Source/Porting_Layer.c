@@ -7,10 +7,7 @@
 #ifndef __PORTING_LAYER_FUNCTION___
 #define __PORTING_LAYER_FUNCTION___
 
-#include <mega32a.h>
-#include <i2c.h>
-#include <delay.h>
-#include <stdio.h>
+
 #include "Porting_Layer.h"
 
 
