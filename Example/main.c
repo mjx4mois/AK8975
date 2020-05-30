@@ -21,20 +21,14 @@ External RAM size       : 0
 Data Stack size         : 512
 *******************************************************/
 
-
 #include <mega32a.h>
-
 #include <delay.h>
 #include <math.h>
-
-
 #include <SENSOR_AK8975.h>
-
+#include <alcd.h>
 // I2C Bus functions
 #include <i2c.h>
 
-// Alphanumeric LCD functions
-#include <alcd.h>
 
 // Declare your global variables here
 
@@ -303,10 +297,10 @@ lcd_init(16);
 // Global enable interrupts
 #asm("sei")
 
-while (1)
-      {
-      // Place your code here          
- 	EXAMPLE_AK8975();       
+	while (1)
+	{
+		// Place your code here          
+		EXAMPLE_AK8975();       
                     
-      }
+	}
 }
